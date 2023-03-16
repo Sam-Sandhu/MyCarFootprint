@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/gas_stations_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <TextView
+        android:id="@+id/text_total_carbon_footprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Carbon Footprint: "
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text_total_fuel_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Fuel Price: "
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_add_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</LinearLayout>

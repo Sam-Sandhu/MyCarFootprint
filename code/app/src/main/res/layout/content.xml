@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/gas_station_name"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gas_station_date"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:textSize="17dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gas_station_type"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="17dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Price: $">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gas_station_total_price"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Footprint: "
+            android:textSize="17dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/gas_station_footprint"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

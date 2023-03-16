@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_gas_station_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:hint="Enter Name of Gas Station">
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/add_gas_station_type_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <RadioButton
+            android:id="@+id/radiobutton_gasoline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gasoline">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radiobutton_diesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diesel">
+        </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/add_gas_station_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:digits="0123456789-"
+        android:maxLength="10"
+        android:hint="Enter Date of Visit (yyyy-mm-dd)">
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_gas_station_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|none"
+        android:digits="0123456789"
+        android:hint="Enter Amount (in litres)">
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_gas_station_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="Enter Price per litre (in $)">
+    </EditText>
+
+
+</LinearLayout>
